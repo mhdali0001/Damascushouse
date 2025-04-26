@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البيت الدمشقي - المفروشات السورية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f9f7f4;
+        }
+        
+        .arabic-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23a17a50' fill-opacity='0.15'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .section-heading:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #d97706;
+            margin: 8px auto 0;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #d97706;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .category-card {
+            transition: all 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-accent {
+            position: relative;
+        }
+        
+        .section-accent:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background-color: #d97706;
+            border-radius: 0 4px 4px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white text-amber-900 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="b10.png" alt="شعار البيت الدمشقي" class="h-14 w-auto"/>
+            </div>
+            <nav class="hidden md:flex space-x-5 space-x-reverse">
+                <a href="#home" class="nav-link px-3 py-2 font-medium hover:text-amber-600 transition">الرئيسية</a>
+                <a href="#categories" class="nav-link px-3 py-2 font-medium hover:text-amber-600 transition">الأقسام</a>
+                <a href="#about" class="nav-link px-3 py-2 font-medium hover:text-amber-600 transition">من نحن</a>
+                <a href="#location" class="nav-link px-3 py-2 font-medium hover:text-amber-600 transition">موقعنا</a>
+            </nav>
+            <div class="flex items-center">
+                <a href="#contact" class="hidden md:inline-flex items-center bg-amber-50 text-amber-800 hover:bg-amber-100 border border-amber-200 px-4 py-2 rounded-lg font-medium transition duration-300">
+                    <i class="fas fa-envelope ml-2"></i>
+                    <span>تواصل معنا</span>
+                </a>
+                <button class="md:hidden text-amber-800 text-xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <nav class="hidden bg-white md:hidden px-4 py-2 shadow-inner border-t border-amber-100">
+            <a href="#home" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded">الرئيسية</a>
+            <a href="#categories" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded">الأقسام</a>
+            <a href="#about" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded">من نحن</a>
+            <a href="#location" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded">موقعنا</a>
+            <a href="#contact" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-b from-amber-50 to-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-right">
+                    <div class="mb-6">
+                        <img src="b1.JPG" alt="البيت الدمشقي - المفروشات السورية" class="mx-auto md:mx-0 md:mr-auto"/>
+                    </div>
+                    <h1 class="text-3xl font-bold text-amber-900 mb-4">المفروشات السورية الأصيلة</h1>
+                    <p class="text-base text-gray-700 mb-8 leading-relaxed">نقدم لكم أجود أنواع المفروشات السورية الأصيلة من قلب سوق الحميدية العريق. تشكيلة واسعة من المفارش، السجاد، والتحف الشرقية مصنوعة بأنامل حرفيين مهرة يحافظون على الإرث السوري العريق.</p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="#categories" class="bg-amber-700 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg inline-flex items-center transition duration-300 shadow-md">
+                            <span>تصفح الأقسام</span>
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                        <a href="#about" class="bg-white hover:bg-amber-50 text-amber-800 font-bold py-3 px-6 rounded-lg inline-flex items-center transition duration-300 border border-amber-200 shadow-sm">
+                            <span>تعرف علينا</span>
+                            <i class="fas fa-info-circle mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="relative rounded-lg overflow-hidden shadow-xl">
+                        <img src="b2.jpeg" alt="مفروشات دمشقية تقليدية" class="w-full h-auto rounded-lg"/>
+                        <!-- Accent Border -->
+                        <div class="absolute inset-0 border-4 border-amber-100 rounded-lg opacity-60"></div>
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-3 -left-3 bg-white px-4 py-2 rounded-lg shadow-lg text-amber-900 flex items-center border border-amber-100">
+                        <div class="bg-amber-100 rounded-full w-8 h-8 flex items-center justify-center text-amber-800 mr-2">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="font-bold">تراث دمشقي أصيل</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-start p-6 bg-amber-50 rounded-lg shadow-sm border border-amber-100">
+                    <div class="bg-amber-100 rounded-full w-12 h-12 flex items-center justify-center text-amber-800 ml-4 flex-shrink-0">
+                        <i class="fas fa-certificate text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-amber-900 mb-2">جودة عالية</h3>
+                        <p class="text-gray-700 text-sm">نلتزم بتقديم منتجات عالية الجودة مصنوعة من أفضل المواد الطبيعية.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start p-6 bg-amber-50 rounded-lg shadow-sm border border-amber-100">
+                    <div class="bg-amber-100 rounded-full w-12 h-12 flex items-center justify-center text-amber-800 ml-4 flex-shrink-0">
+                        <i class="fas fa-hands text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-amber-900 mb-2">صناعة يدوية</h3>
+                        <p class="text-gray-700 text-sm">منتجاتنا مصنوعة بالكامل بأيدي حرفيين سوريين مهرة بخبرة عريقة.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start p-6 bg-amber-50 rounded-lg shadow-sm border border-amber-100">
+                    <div class="bg-amber-100 rounded-full w-12 h-12 flex items-center justify-center text-amber-800 ml-4 flex-shrink-0">
+                        <i class="fas fa-history text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-amber-900 mb-2">إرث عريق</h3>
+                        <p class="text-gray-700 text-sm">تصاميمنا تحافظ على الطابع الدمشقي الأصيل وتعكس تراثنا العريق.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-heading text-3xl font-bold text-amber-900 mb-4">أقسامنا المميزة</h2>
+                <p class="text-gray-700 max-w-3xl mx-auto">تصفح تشكيلتنا الواسعة من المفروشات السورية الأصيلة المصنوعة يدوياً والمصممة بحرفية عالية</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <div class="category-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="b4.jpeg" alt="مفارش منزلية تقليدية" class="w-full h-48 object-cover"/>
+                        <div class="absolute top-0 left-0 bg-amber-800 text-white px-3 py-1 text-sm font-bold">الأكثر مبيعاً</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto -mt-10 mb-4 shadow-md border-4 border-white text-amber-800">
+                            <i class="fas fa-rug text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-3 text-center">مفارش ومنسوجات</h3>
+                        <p class="text-gray-700 text-sm mb-5 text-center">مفارش طاولات وقطع قماشية مميزة مصنوعة من أجود أنواع الأقمشة ومطرزة بإتقان.</p>
+                        <div class="flex justify-center">
+                            <a href="#" class="bg-amber-50 hover:bg-amber-100 text-amber-800 py-2 px-4 rounded-full inline-flex items-center transition duration-200 border border-amber-200">
+                                <span>تصفح القسم</span>
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="category-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="b3.jpeg" alt="سجاد ومصليات تقليدية" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto -mt-10 mb-4 shadow-md border-4 border-white text-amber-800">
+                            <i class="fas fa-pray text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-3 text-center">سجاد ومصليات</h3>
+                        <p class="text-gray-700 text-sm mb-5 text-center">تشكيلة واسعة من السجاد الشرقي والمصليات بنقوش إسلامية تقليدية وخامات عالية الجودة.</p>
+                        <div class="flex justify-center">
+                            <a href="#" class="bg-amber-50 hover:bg-amber-100 text-amber-800 py-2 px-4 rounded-full inline-flex items-center transition duration-200 border border-amber-200">
+                                <span>تصفح القسم</span>
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="category-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="b5.jpeg" alt="إكسسوارات منزلية سورية" class="w-full h-48 object-cover"/>
+                        <div class="absolute top-0 left-0 bg-amber-600 text-white px-3 py-1 text-sm font-bold">جديد</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto -mt-10 mb-4 shadow-md border-4 border-white text-amber-800">
+                            <i class="fas fa-home text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-3 text-center">إكسسوارات منزلية</h3>
+                        <p class="text-gray-700 text-sm mb-5 text-center">مجموعة متنوعة من الإكسسوارات المنزلية الشرقية الأصيلة التي تضيف لمسة فنية لمنزلك.</p>
+                        <div class="flex justify-center">
+                            <a href="#" class="bg-amber-50 hover:bg-amber-100 text-amber-800 py-2 px-4 rounded-full inline-flex items-center transition duration-200 border border-amber-200">
+                                <span>تصفح القسم</span>
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img src="/api/placeholder/600/400" alt="محل البيت الدمشقي في سوق الحميدية" class="rounded-lg shadow-lg w-full h-auto"/>
+                        <!-- Floating Year -->
+                        <div class="absolute top-4 right-4 bg-white text-amber-900 rounded-full w-20 h-20 flex flex-col items-center justify-center shadow-md border border-amber-100">
+                            <span class="text-xs">تأسس عام</span>
+                            <span class="text-xl font-bold">١٩٧٠</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="section-accent pl-6">
+                        <h2 class="text-3xl font-bold text-amber-900 mb-6">من نحن</h2>
+                        <p class="text-gray-700 mb-5 leading-relaxed">متجر البيت الدمشقي هو امتداد لإرث عائلي بدأ منذ عام ١٩٧٠ في قلب سوق الحميدية العريق بدمشق. نفتخر بتقديم منتجات شرقية أصيلة تعكس الحرفية الدمشقية التقليدية وفنون التطريز والنسيج السوري.</p>
+                        <p class="text-gray-700 mb-5 leading-relaxed">نلتزم بالحفاظ على جودة منتجاتنا والمساهمة في نقل الحرف اليدوية التقليدية عبر الأجيال. تتميز منتجاتنا بالأصالة والجودة العالية والتصاميم الفريدة التي تجمع بين عراقة الماضي وذوق الحاضر.</p>
+                        
+                        <!-- Quote -->
+                        <div class="bg-amber-50 p-5 rounded-lg border-r-4 border-amber-700 mt-6 mb-8">
+                            <p class="text-gray-700 italic">"نسعى دائماً للحفاظ على أصالة الصناعة الدمشقية وتطويرها لتناسب الذوق العصري."</p>
+                            <p class="text-amber-900 font-bold text-sm mt-2"> مدير الشركة</p>
+                        </div>
+                        
+                        <a href="#location" class="bg-amber-700 hover:bg-amber-600 text-white py-2 px-6 rounded-lg inline-flex items-center transition duration-300 shadow-md">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            <span>زيارة متجرنا</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Values -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm border border-amber-100 text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-amber-800 shadow-sm border border-amber-200">
+                        <i class="fas fa-medal text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-amber-900 mb-3">الجودة العالية</h4>
+                    <p class="text-gray-700 text-sm">نلتزم بتقديم منتجات عالية الجودة مصنوعة من أفضل المواد وبأيدي أمهر الحرفيين.</p>
+                </div>
+                
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm border border-amber-100 text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-amber-800 shadow-sm border border-amber-200">
+                        <i class="fas fa-hands text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-amber-900 mb-3">الحرفية التقليدية</h4>
+                    <p class="text-gray-700 text-sm">نحافظ على التقنيات التقليدية في الصناعة والتطريز التي توارثناها عبر الأجيال.</p>
+                </div>
+                
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm border border-amber-100 text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-amber-800 shadow-sm border border-amber-200">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-amber-900 mb-3">التراث والأصالة</h4>
+                    <p class="text-gray-700 text-sm">نسعى للحفاظ على الإرث الدمشقي العريق ونقله للأجيال القادمة بصورة تناسب العصر الحديث.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-heading text-3xl font-bold text-amber-900 mb-4">موقعنا</h2>
+                <p class="text-gray-700 max-w-3xl mx-auto">نتشرف بزيارتكم في متجرنا الواقع في قلب سوق الحميدية التاريخي بدمشق</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-3/5">
+                    <div class="relative rounded-lg overflow-hidden shadow-lg h-full">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZUuBuHz6oSzocUcnOU80LfXoo69X_DCTXkA&s" alt="صورة لسوق الحميدية في دمشق" class="w-full h-full object-cover"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="text-xl font-bold mb-2">سوق الحميدية - دمشق</h3>
+                                <p class="text-amber-100">أقدم أسواق دمشق وأكثرها شهرة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/5">
+                    <div class="bg-white p-8 rounded-lg shadow-md border border-amber-100 h-full">
+                        <h3 class="text-xl font-bold text-amber-900 mb-6 pb-3 border-b border-amber-200">زورونا في متجرنا</h3>
+                        <p class="text-gray-700 mb-8">نسعد باستقبالكم في متجرنا العريق الكائن في قلب سوق الحميدية التاريخي بدمشق. تفضلوا بزيارتنا واستكشاف تشكيلتنا الواسعة من المفروشات السورية الأصيلة.</p>
+                        
+                        <div class="space-y-5">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center ml-4 flex-shrink-0 text-amber-800">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-amber-900 mb-1">العنوان</h4>
+                                    <p class="text-gray-700">سوق الحميدية، بالقرب من قلعة دمشق، دمشق، سوريا</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center ml-4 flex-shrink-0 text-amber-800">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-amber-900 mb-1">هاتف</h4>
+                                    <p class="text-gray-700" dir="ltr">+963 11 123 4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center ml-4 flex-shrink-0 text-amber-800">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-amber-900 mb-1">ساعات العمل</h4>
+                                    <p class="text-gray-700">السبت - الخميس: ٩ص - ٧م</p>
+                                    <p class="text-gray-700">الجمعة: ٢ظ - ٧م</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center ml-4 flex-shrink-0 text-amber-800">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-amber-900 mb-1">البريد الإلكتروني</h4>
+                                    <p class="text-gray-700">info@damascushome.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-amber-900 mb-3">تابعونا على وسائل التواصل</h4>
+                            <div class="flex space-x-3 space-x-reverse">
+                                <a href="#" class="w-10 h-10 bg-amber-700 text-white rounded-full flex items-center justify-center hover:bg-amber-600 transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-amber-700 text-white rounded-full flex items-center justify-center hover:bg-amber-600 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-amber-700 text-white rounded-full flex items-center justify-center hover:bg-amber-600 transition">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-amber-700 text-white rounded-full flex items-center justify-center hover:bg-amber-600 transition">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-amber-50 rounded-lg shadow-md overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-amber-800 text-white p-8">
+                        <h3 class="text-2xl font-bold mb-6">تواصل معنا</h3>
+                        <p class="mb-8 text-amber-100">نسعد بالرد على استفساراتكم وتلبية طلباتكم. يمكنكم التواصل معنا عبر النموذج المرفق أو عبر وسائل الاتصال المختلفة.</p>
+                        
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-amber-700 rounded-full flex items-center justify-center ml-3 flex-shrink-0">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">هاتف</h4>
+                                    <p class="text-amber-100" dir="ltr">+963 11 123 4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-amber-700 rounded-full flex items-center justify-center ml-3 flex-shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">البريد الإلكتروني</h4>
+                                    <p class="text-amber-100">info@damascushome.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-amber-700 rounded-full flex items-center justify-center ml-3 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">العنوان</h4>
+                                    <p class="text-amber-100">سوق الحميدية، دمشق، سوريا</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-xl font-bold text-amber-900 mb-6">أرسل لنا رسالة</h3>
+                        
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">الاسم</label>
+                                    <input type="text" id="name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="الاسم الكامل">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">البريد الإلكتروني</label>
+                                    <input type="email" id="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="example@email.com">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">الموضوع</label>
+                                <input type="text" id="subject" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="موضوع الرسالة">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">الرسالة</label>
+                                <textarea id="message" rows="5" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="اكتب رسالتك هنا..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="bg-amber-700 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 w-full md:w-auto">
+                                إرسال الرسالة
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section - Simple Version -->
+    <section class="py-12 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="section-heading text-3xl font-bold text-amber-900 mb-4">آراء عملائنا</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto">نفخر بثقة عملائنا وآرائهم حول منتجاتنا وخدماتنا</p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center ml-3 text-amber-800">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-amber-900">سارة فايز</h4>
+                                <div class="flex text-amber-500 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm">"اشتريت مفرش طاولة مطرز من المتجر لاستخدامه في منزلي، وكان رائعاً جداً! التطريز دقيق والخامة ممتازة. المتجر يقدم منتجات عالية الجودة تعكس التراث الدمشقي الأصيل."</p>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center ml-3 text-amber-800">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-amber-900">محمد أحمد</h4>
+                                <div class="flex text-amber-500 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm">"منتجات أصيلة وجودة عالية. اشتريت مجموعة من المفارش كهدايا لأصدقائي في الخارج وكانت محل إعجاب الجميع. أقدر الاهتمام بالتفاصيل والتصميمات الفريدة."</p>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center ml-3 text-amber-800">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-amber-900">رنا سعيد</h4>
+                                <div class="flex text-amber-500 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm">"أحب التسوق من هذا المتجر في كل زيارة لي لدمشق. القطع الموجودة فريدة وتعكس التراث السوري الأصيل. صاحب المتجر ودود ويقدم المساعدة دائماً."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <!-- Logo & About -->
+                <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                    <img src="/api/placeholder/120/60" alt="شعار البيت الدمشقي" class="h-14 w-auto mb-4"/>
+                    <p class="text-amber-200 mb-6 max-w-xs">نحن متجر متخصص في المفروشات السورية التقليدية المصنوعة يدوياً بجودة عالية من قلب دمشق القديمة.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-white hover:text-amber-200 transition">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-amber-200 transition">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-amber-200 transition">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-amber-200 transition">
+                            <i class="fab fa-telegram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links -->
+                <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                    <h3 class="text-lg font-bold mb-6 border-b border-amber-800 pb-2">روابط سريعة</h3>
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="#home" class="hover:text-amber-200 transition inline-flex items-center">
+                                        <i class="fas fa-chevron-left text-xs ml-1 text-amber-500"></i>
+                                        <span>الرئيسية</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#categories" class="hover:text-amber-200 transition inline-flex items-center">
+                                        <i class="fas fa-chevron-left text-xs ml-1 text-amber-500"></i>
+                                        <span>الأقسام</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#about" class="hover:text-amber-200 transition inline-flex items-center">
+                                        <i class="fas fa-chevron-left text-xs ml-1 text-amber-500"></i>
+                                        <span>من نحن</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="#location" class="hover:text-amber-200 transition inline-flex items-center">
+                                        <i class="fas fa-chevron-left text-xs ml-1 text-amber-500"></i>
+                                        <span>موقعنا</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="hover:text-amber-200 transition inline-flex items-center">
+                                        <i class="fas fa-chevron-left text-xs ml-1 text-amber-500"></i>
+                                        <span>تواصل معنا</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-amber-200 transition inline-flex items-center">
+                                        <i class="fas fa-chevron-left text-xs ml-1 text-amber-500"></i>
+                                        <span>الشروط والأحكام</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="w-full md:w-1/3">
+                    <h3 class="text-lg font-bold mb-6 border-b border-amber-800 pb-2">معلومات الاتصال</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-amber-500 ml-3 mt-1"></i>
+                            <span>سوق الحميدية، بالقرب من قلعة دمشق، دمشق، سوريا</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-amber-500 ml-3 mt-1"></i>
+                            <span dir="ltr">+963 11 123 4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-amber-500 ml-3 mt-1"></i>
+                            <span>info@damascushome.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-amber-500 ml-3 mt-1"></i>
+                            <div>
+                                <p>السبت - الخميس: ٩ص - ٧م</p>
+                                <p>الجمعة: مغلق</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-amber-800 mt-8 pt-6 text-center">
+                <p class="text-amber-200 text-sm">جميع الحقوق محفوظة &copy; ٢٠٢٥ البيت الدمشقي - المفروشات السورية</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-amber-700 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 z-50 hover:bg-amber-600">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Mobile menu toggle
+        const menuButton = document.querySelector('header button');
+        const mobileNav = document.querySelector('header nav.hidden');
+        
+        menuButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
